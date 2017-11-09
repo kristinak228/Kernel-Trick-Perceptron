@@ -70,7 +70,7 @@ def eval():
         err = 0
         mistake = False
         for i in range(len(trainList)):
-            if float(label[i]) * (np.dot(alpha, omega[i]) + b) <= 0.0: #!= float(label[i]):
+            if float(label[i]) * (np.dot(alpha, omega[i]) + b) <= 0.0:
                 mistake = True
                 alpha[i] = alpha[i] + 1.0
                 b = b + float(label[i])
